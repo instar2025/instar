@@ -1,6 +1,6 @@
 {
   "name": "instar-website",
-  "homepage": "https://instar2025.github.io/instar",
+  "homepage": "https://instar2025.github.io/instar/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm rub build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "emailjs": "^4.0.3",
